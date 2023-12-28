@@ -14,7 +14,7 @@ app.use("/api/v1/products", productRouter);
 
 const port = process.env.PORT || 3000;
 const mongoURL =
-  "mongodb+srv://domanhthuong20122002:MatKhauMoi123@nodecourse.dcfmcdw.mongodb.net/goldenOwlTest?retryWrites=true&w=majority";
+  "mongodb+srv://<username>:<password>@nodecourse.dcfmcdw.mongodb.net/goldenOwlTest?retryWrites=true&w=majority";
 const start = async () => {
   try {
     connectDB(mongoURL);
